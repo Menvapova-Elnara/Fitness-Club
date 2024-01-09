@@ -89,6 +89,7 @@ body {
   padding: 11px 32px;
   font-size: 20px;
   color: #292929;
+  font-family: Roboto;
   font-weight: 500;
   transition: all 0.7s;
 }
@@ -119,6 +120,7 @@ body {
   left: 220px;
   font-size: 160px;
   color: #cfcfcd;
+  font-family: Arial;
   font-size: 160px;
   font-weight: 900;
   letter-spacing: 8px;
@@ -144,4 +146,8 @@ body {
   color: #292929;
   padding: 11px 32px;
   width: 233px;
+  transition: all 0.7s;
+}
+.main__text-next:hover {
+  color: rgb(211, 91, 0);
 }/*# sourceMappingURL=style.css.map */
