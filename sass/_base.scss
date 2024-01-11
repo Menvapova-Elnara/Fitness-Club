@@ -1,8 +1,17 @@
-.container{
-  max-width: 1400px;
-  margin: 0 auto;
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+
+	@media screen and (max-width: 1400px) {
+		padding: 0 32px;
+	}
+
+	@media screen and (max-width: 992px) {
+		padding: 0 32px;
+	}
 }
-body{
-  background-color: rgb(236, 236, 234);
-  height: 100%;
+
+@mixin flex {
+	display: flex;
+	justify-content: center;
 }
