@@ -1,0 +1,65 @@
+.header {
+	background-color: rgb(236, 236, 234);
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		height: 140px;
+
+		@media screen and (max-width: 952px) {
+			height: 80px;
+		}
+	}
+
+	.logo {
+		max-width: 181.818px;
+		max-height: 100px;
+		margin: 30px 0 10px 0;
+
+		@media screen and (max-width: 952px) {
+			max-width: 117px;
+			max-height: 64px;
+			padding: 16px 0 0 0;
+			margin: 0;
+		}
+	}
+
+	.navigation {
+		display: flex;
+		letter-spacing: 2px;
+		padding: 58px 0 37px 0;
+
+		@media screen and (max-width: 952px) {
+			display: none;
+		}
+
+		&__item-link {
+			padding: 11px 32px;
+			font-size: 20px;
+			color: #292929;
+			font-family: Roboto;
+			font-weight: 500;
+			transition: all 0.7s;
+
+			&:hover {
+				color: #ff8340;
+			}
+		}
+
+		&-list {
+			display: flex;
+			margin: 0 auto;
+		}
+	}
+
+	.burger {
+		display: none;
+		padding-top: 16px;
+		max-width: 48px;
+		max-height: 48px;
+
+		@media screen and (max-width: 952px) {
+			display: block;
+		}
+	}
+}

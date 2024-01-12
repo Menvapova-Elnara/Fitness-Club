@@ -1,0 +1,102 @@
+.main {
+	height: calc(100vh - 140px);
+	background-color: rgb(236, 236, 234);
+
+	@media screen and (max-width: 952px) {
+			height: calc(100vh - 80px);
+		}
+
+	&__wrapper {
+		position: relative;
+		height: 100%;
+	}
+
+	&__man {
+		position: absolute;
+		max-width: 990px;
+		left: -220px;
+		bottom: 0;
+		// top:-140px;
+		z-index: 2;
+
+		@media screen and (max-width: 1440px) {
+			max-width: 850px;
+			left: -150px;
+		}
+
+		@media screen and (max-width: 1148px) {
+			max-width: 624px;
+			left: -68px;
+		}
+	}
+
+	&__title {
+		position: absolute;
+		top: 90px;
+		left: 220px;
+		font-size: clamp(100px, 10vw, 160px);
+		color: #cfcfcd;
+		font-family: Arial;
+		font-weight: 900;
+		letter-spacing: 8px;
+
+		@media screen and (max-width: 1440px) {
+			font-size: 120px;
+			letter-spacing: 5px;
+			left: 150px;
+			top: 96px;
+		}
+
+		@media screen and (max-width: 1148px) {
+			left: 95px;
+			font-size: 100px;
+		}
+	}
+
+	&__text {
+		@include flex;
+		flex-direction: column;
+		font-family: Roboto;
+		font-size: 20px;
+		font-weight: 500;
+		letter-spacing: 2px;
+		gap: 14px;
+		position: absolute;
+		bottom: 225px;
+		right: 20px;
+
+		@media screen and (max-width: 1440px) {
+			gap: 0;
+			bottom: 100px;
+		}
+		@media screen and (max-width: 952px) {
+			gap: 0;
+			bottom: 10px;
+		}
+
+		&-description {
+			color: #000;
+			max-width: 590px;
+			z-index: 3;
+
+			@media screen and (max-width: 1440px) {
+				max-width: 470px;
+			}
+
+			@media screen and (max-width: 952px) {
+		max-width: 363px;
+		}
+		}
+
+		&-next {
+			color: #292929;
+			padding: 11px 32px;
+			
+			transition: all 0.7s;
+
+			&:hover {
+				color: #ff8340;
+			}
+		}
+	}
+}
