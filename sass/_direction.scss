@@ -1,9 +1,7 @@
 .direction {
 	background-color: #292929;
 	max-width: 100%;
-	height: 100vh;
-
-
+	
 	&__wrapper {
 		@include flex;
 		flex-direction: column;
