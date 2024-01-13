@@ -10,7 +10,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, hr {
   margin: 0;
   padding: 0;
   border: 0;
@@ -52,12 +52,12 @@ a {
   text-decoration: none;
 }
 
-* {
-  font-family: sans-serif;
+.input, .textarea {
+  outline: none;
 }
 
 * {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
 
@@ -246,7 +246,6 @@ a {
 
 .body {
   max-width: 100%;
-  height: 100wh;
 }
 .body__wrapper {
   position: relative;
@@ -357,7 +356,6 @@ a {
 .direction {
   background-color: #292929;
   max-width: 100%;
-  height: 100vh;
 }
 .direction__wrapper {
   display: flex;
@@ -390,4 +388,114 @@ a {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 2px;
+}
+
+.feedback {
+  padding: 40px 0 165px 0;
+  background-color: #ff8340;
+}
+@media screen and (max-width: 952px) {
+  .feedback {
+    padding: 32px 0 21px 0;
+  }
+}
+.feedback__title {
+  color: #292929;
+  font-family: Arial;
+  font-size: clamp(32px, 3vw, 45px);
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 952px) {
+  .feedback__title {
+    letter-spacing: 1.6px;
+    margin-bottom: 38px;
+  }
+}
+.feedback__line {
+  width: 64px;
+  height: 6px;
+  background: #292929;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 952px) {
+  .feedback__line {
+    margin-bottom: 48px;
+  }
+}
+.feedback__description {
+  color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 952px) {
+  .feedback__description {
+    margin-bottom: 30px;
+  }
+}
+.feedback__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px 0;
+}
+@media screen and (max-width: 952px) {
+  .feedback__form {
+    gap: 20px 0;
+  }
+}
+.feedback__form-select, .feedback__form-field {
+  width: 49%;
+  height: 50px;
+  padding-left: 34px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: Roboto;
+  font-weight: 500;
+}
+.feedback__form-select {
+  background: #292929;
+  color: #fff;
+}
+.feedback__form-field::plaseholder {
+  color: #b0b0b0;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.feedback__form-massage {
+  width: 100%;
+  height: 198px;
+  resize: none;
+  padding: 18px 0 0 34px;
+}
+.feedback__form-massage::plaseholder {
+  color: #b0b0b0;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.feedback__form-submit {
+  margin-left: auto;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 11px 0;
+  color: #292929;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+.feedback__form-submit:hover {
+  border-color: #fff;
 }/*# sourceMappingURL=style.css.map */
