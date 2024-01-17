@@ -25,9 +25,7 @@
 	}
 
 	.navigation {
-		display: flex;
-		letter-spacing: 2px;
-		padding: 58px 0 37px 0;
+	padding: 58px 0 37px 0;
 
 		@media screen and (max-width: 952px) {
 			display: none;
@@ -37,8 +35,9 @@
 			padding: 11px 32px;
 			font-size: 20px;
 			color: #292929;
-			font-family: Roboto;
+			font-family: Roboto Condensed Regular;
 			font-weight: 500;
+			letter-spacing: 2px;
 			transition: all 0.7s;
 
 			&:hover {
@@ -51,7 +50,7 @@
 			margin: 0 auto;
 		}
 	}
-
+	
 	.burger {
 		display: none;
 		padding-top: 16px;

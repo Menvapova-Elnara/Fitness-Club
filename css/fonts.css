@@ -8,13 +8,13 @@
     font-style: normal;
   }
 
-  @font-face {
-    font-family: 'Roboto Slab Regular';
-    src: url('../Fonts/RobotoSlab-Regular.eot');
-    src: url('../Fonts/RobotoSlab-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../Fonts/RobotoSlab-Regular.woff') format('woff'),
-    url('../Fonts/RobotoSlab-Regular.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    }
+@font-face {
+  font-family: 'Roboto Condensed Regular';
+  src: url('../Fonts/RobotoCondensed-Regular.eot');
+  src: url('../Fonts/RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../Fonts/RobotoCondensed-Regular.woff') format('woff'),
+  url('../Fonts/RobotoCondensed-Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  }
     

@@ -36,7 +36,7 @@
 		left: 220px;
 		font-size: clamp(100px, 10vw, 160px);
 		color: #cfcfcd;
-		font-family: Arial;
+		font-family: Arial Bold;
 		font-weight: 900;
 		letter-spacing: 8px;
 
@@ -56,7 +56,7 @@
 	&__text {
 		@include flex;
 		flex-direction: column;
-		font-family: Roboto;
+		font-family: Roboto Condensed Regular;
 		font-size: 20px;
 		font-weight: 500;
 		letter-spacing: 2px;

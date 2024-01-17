@@ -5,11 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 
-		<link rel="stylesheet" href="./css/fonts.css" />
-		<link href="https: //fonts.googleapis.com/css2?family= Roboto :wght@500 & display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/fonts.css" />		
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 		
 		<link rel="stylesheet" href="./css/style.css" />
-		
+
 	</head>
 	<body>
 		<header class="header">
@@ -19,19 +20,19 @@
 				<nav class="navigation">
 					<ul class="navigation-list">
 						<li class="navigation__item">
-							<a href="" class="navigation__item-link">О НАС</a>
+							<a id="part1" href="" class="navigation__item-link">О НАС</a>
 						</li>
 
 						<li class="navigation__item">
-							<a href="" class="navigation__item-link">ТРЕНЕРЫ</a>
+							<a id="part2" href="" class="navigation__item-link">ТРЕНЕРЫ</a>
 						</li>
 
 						<li class="navigation__item">
-							<a href="" class="navigation__item-link">АБОНЕМЕНТЫ</a>
+							<a id="part3" href="" class="navigation__item-link">АБОНЕМЕНТЫ</a>
 						</li>
 
 						<li class="navigation__item">
-							<a href="" class="navigation__item-link">КОНТАКТЫ</a>
+							<a id="part4" href="" class="navigation__item-link">КОНТАКТЫ</a>
 						</li>
 					</ul>
 				</nav>
@@ -138,7 +139,7 @@
 
 		</section>
 
-		<section class="system">
+		<section class="container__system system">
 			<div class="system__description">
 				<div class="system__description-text">
 					<h2 class="system__description-title">СИСТЕМА</h2>
@@ -175,5 +176,149 @@
 			</div>
 
 		</section>
+
+		<section class="trainers">
+			<div class="container">
+				<h2 class="trainers__title">ТРЕНЕРСКИЙ СОСТАВ</h2>
+			</div>
+
+			<div class="swiper">
+  			<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./img/image 5.jpg" alt="" class="swiper-slide__preview">
+						<h2 class="swiper-slide__title">ДЖЕСС <br> ПАРКЕР</h2>
+						<span class="swiper-slide__subtitle">Персональный тренер</span>
+					</div>
+
+					<div class="swiper-slide">
+						<img src="./img/image 4.jpg" alt="" class="swiper-slide__preview">
+						<h2 class="swiper-slide__title">САРА <br> КОННОР</h2>
+						<span class="swiper-slide__subtitle">Персональный тренер</span>
+					</div>
+
+					<div class="swiper-slide">
+						<img src="./img/image 6.jpg" alt="" class="swiper-slide__preview">
+						<h2 class="swiper-slide__title">ОРЛАНДО <br> БЛУМ</h2>
+						<span class="swiper-slide__subtitle">Персональный тренер</span>
+					</div>
+
+					<div class="swiper-slide">
+						<img src="./img/image 7.jpg" alt="" class="swiper-slide__preview">
+						<h2 class="swiper-slide__title">АЛЕК <br> БОЛДУИН</h2>
+						<span class="swiper-slide__subtitle">Персональный тренер</span>
+					</div>
+					
+					<div class="swiper-slide">
+						<img src="./img/image 8.jpg" alt="" class="swiper-slide__preview">
+						<h2 class="swiper-slide__title">ТЕРМИ <br> НАТОР</h2>
+						<span class="swiper-slide__subtitle">Персональный тренер</span>
+					</div>
+				</div>
+
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+
+			</div>
+
+		</section>
+
+		<section class="subscription">
+			<div class="container">
+				<h2 class="subscription__title">АБОНЕМЕНТ</h2>
+
+				<div class="subscription__option">
+					<div class="subscription__option-description">
+						<div class="subscription__option-description_namber">1</div>
+						<span class="subscription__option-description_month">МЕСЯЦ</span>
+						<p class="subscription__option-description_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<span class="subscription__option-description_money">2 000 ₽</span>
+						<button class="subscription__option-description_pay">КУПИТЬ</button>
+					</div>
+
+					<div class="subscription__option-description">
+						<div class="subscription__option-description_namber">3</div>
+						<span class="subscription__option-description_month">МЕСЯЦА</span>
+						<p class="subscription__option-description_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<span class="subscription__option-description_money">5 200 ₽</span>
+						<button class="subscription__option-description_pay">КУПИТЬ</button>
+					</div>
+
+					<div class="subscription__option-description subscription__option-description6">
+						<div class="subscription__option-description_namber subscription__option-description6_namber6">6</div>
+						<span class="subscription__option-description_month">МЕСЯЦЕВ</span>
+						<p class="subscription__option-description_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<span class="subscription__option-description_money">10 000 ₽</span>
+						<button class="subscription__option-description_pay">КУПИТЬ</button>
+					</div>
+
+					<div class="subscription__option-description">
+						<div class="subscription__option-description_namber">12</div>
+						<span class="subscription__option-description_month">МЕСЯЦЕВ</span>
+						<p class="subscription__option-description_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<span class="subscription__option-description_money">20 000 ₽</span>
+						<button class="subscription__option-description_pay">КУПИТЬ</button>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="map">
+			<h2 class="container map__title">ДОБРО ПОЖАЛОВАТЬ!</h2>
+			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adeca44abc4df6dbf86a650af60d85f46caf6faecfc060aac0491166d31e333b4&amp;source=constructor" frameborder="0" class="map__activ"></iframe>
+		</section>
+		
+		<footer class="footer">
+			<div class="container">
+				<nav class="footer__navigation">
+					<ul class="footer__navigation-list">
+						<li class="navigation__item">
+							<a href="#part1" class="navigation__item-link">О НАС</a>
+						</li>
+
+						<li class="navigation__item">
+							<a href="#part2" class="navigation__item-link">ТРЕНЕРЫ</a>
+						</li>
+
+						<li class="navigation__item">
+							<a href="#part3" class="navigation__item-link">АБОНЕМЕНТЫ</a>
+						</li>
+
+						<li class="navigation__item">
+							<a href="#part4" class="navigation__item-link">КОНТАКТЫ</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer__inform">
+					<span class="footer__inform-1">blvckdesign</span>
+					<span>2023</span>
+			</div></div>
+				
+		</footer>
+		
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script>
+			const swiper = new Swiper('.swiper', {
+				breakpoints: {
+					320: {
+						slidesPerView: 1
+					},
+					540: {
+						slidesPerView: 2
+					},
+					952: {
+						slidesPerView: 3
+					},
+					1200: {
+						slidesPerView: 5
+					}
+				},
+
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev'
+				}
+			});
+		</script>
 	</body>
 </html>

@@ -1,0 +1,111 @@
+.trainers {
+	padding: 140px 0 15px 0;
+
+	@media screen and (max-width: 992px){
+		padding: 0 0 15px 0;
+	}
+
+	&__title {
+		display: block;
+		color: #292929;
+		font-family: Arial Bold;
+		font-size: 80px;
+		font-weight: 900;
+		margin-bottom: 124px;
+
+		@media screen and (max-width: 992px){
+			display: none;
+		}
+
+	}
+}
+
+.swiper {
+	.swiper-slide {
+			@media screen and (max-width: 952px){
+			filter: grayscale(1);
+		}
+		
+		&__preview {
+			width: 100%;
+			height: 750px;
+			object-fit: cover;
+			object-position: top;
+			margin-bottom: 15px;
+
+			@media screen and (max-width: 992px) {
+				max-height: 626px;
+			}
+		}
+
+		&-next{
+			@media screen and (max-width: 992px){
+				filter: grayscale(0);
+			}
+		}
+
+		&__title {
+			color: #292929;
+			font-family: Arial Bold;
+			font-size: 45px;
+			font-weight: 900;
+			line-height: 50px;
+			margin: 0 0 10px 30px;
+
+
+			@media screen and (max-width: 952px) {
+				font-size: 37px;
+				line-height: 42px;
+			}
+		}
+
+		&__subtitle {
+			color: #292929;
+			font-family: Roboto Condensed Regular;
+			font-size: 20px;
+			font-weight: 500;
+			letter-spacing: 2px;
+			margin-left: 30px;
+		}
+	}
+
+	&-button-prev, &-button-next{
+		display: none;
+		height: 100%;
+		top: 0;
+
+		@media screen and (min-width: 1200px){
+			display: flex;
+		}
+	}
+
+	&-button-prev{
+		@media screen and (min-width: 1200px){
+			width: 210px;
+			left: 0;
+			background: linear-gradient(90deg, #FFF 0%, rgba(41, 41, 41, 0.00) 60%);
+		}
+
+		&:after{
+			@media screen and (min-width: 1200px){
+				position: absolute;
+				left: 34px;
+			}
+		}
+		}
+		
+	&-button-next{
+		@media screen and (min-width: 1200px){
+			width: 210px;
+			right: 0;
+			background: linear-gradient(-90deg, #FFF 0%, rgba(41, 41, 41, 0.00) 60%);
+		}
+		
+		&:after{
+			@media screen and (min-width: 1200px){
+				position: absolute;
+				right: 34px;
+			}
+		}
+	}
+}

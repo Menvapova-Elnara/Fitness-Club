@@ -1,0 +1,42 @@
+.footer {
+	padding: 46px 0 23px 0;
+	
+	&__navigation{
+		padding: 0 0 44px 0;
+
+		&-list{
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.navigation__item-link{
+			font-size: 20px;
+			color: #292929;
+			font-family: Roboto Condensed Regular;
+			font-weight: 500;
+			letter-spacing: 2px;
+			transition: all 0.7s;
+
+			&:hover {
+				color: #ff8340;
+			}
+		}
+	}
+
+	&__inform {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: #292929;
+		font-family: Roboto Condensed Regular;
+		font-size: 20px;
+		font-weight: 500;
+		letter-spacing: 2px;
+
+		&-1 {
+			padding: 11px 0;
+		}
+	}
+}
+
+
